@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Contest</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
+   <div class="main">
+    <p>Filter ui cards via their profession.</p> <br>
+
+    <select id="profession-select">
+        <option value="">Select Profession</option>
+        <option value="developer">Developer</option>
+        <option value="admin">Admin</option>
+      </select>
+      <br>
+      <div id="employee-container"></div>
+      <button id="filter-button">Filter</button>
+      <p>Add a new user</p> <br>
+
+      <div class="down">
+        <div>
+            <label for="name">Enter Name</label><br>
+            <input class="input" type="text" id="name-input" placeholder="Name">
+        </div>
+        <div>
+            <label for="name">Enter Profession</label><br>
+      <input class="input" type="text" id="profession-input" placeholder="Profession">
+        </div>
+        <div>
+            <label for="name">Enter Age</label><br>
+      <input class="input" type="number" id="age-input" placeholder="Age">
+        </div>
+      </div>
+      <button id="add-button">Add User</button>
+    
+   </div>
     <script src="script.js"></script>
 </body>
 </html>
