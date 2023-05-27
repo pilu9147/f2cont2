@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoinGecko API Demo</title>
+  <style>
+    html {
+        background-color: black;
+    }
+    #search-input {
+        width: 470px !important;
+        height: 25px;
+    }
+    .main {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button {
+        height: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    tr {
+        color: aliceblue;
+    }
+    th {
+      color: white;
+    }
+    input[type="text"] {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="main">
+<input type="text" id="search-input" placeholder="Search By Name or Symbol ">
+  <button id="search-button">Search</button>
+  <button id="sort-marketcap-button">Sort By Mkt Cap
+</button>
+  <button id="sort-percentagechange-button">Sort by percentage</button>
+  <table id="coin-table">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Symbol</th>
+        <th>Current Price</th>
+        <th>Total Volume</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table rows will be dynamically generated here -->
+    </tbody>
+  </table>
+  </div>
+
+  <script src="fetch.js"></script>
+</body>
+</html>
+
